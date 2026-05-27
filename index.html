@@ -4,26 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saumya Seth — Design Work Samples</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
   <style>
     :root{
-      --bg: #FFF9FF;       
-      --card-bg: #FFFFFF;     
-      --muted: #7A6A86;         
-      --accent-1: #6B4EFF;    
-      --accent-2: #FF7AC2;     
-      --accent-3: #FFD479;   
+      --bg: #FFF9FF;
+      --card-bg: #FFFFFF;
+      --muted: #7A6A86;
+      --accent-1: #6B4EFF;
+      --accent-2: #FF7AC2;
+      --accent-3: #FFD479;
       --glass: rgba(255,255,255,0.6);
       --radius: 14px;
       --gap: 28px;
       --card-shadow: 0 6px 22px rgba(107,78,255,0.12), 0 2px 6px rgba(0,0,0,0.04);
     }
-
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -36,21 +32,18 @@
       display:flex;
       justify-content:center;
     }
-
     .wrap{
       width:100%;
       max-width:1200px;
     }
-
     .hero{
       display:flex;
       align-items:flex-end;
       gap:20px;
       margin-bottom: var(--gap);
-  padding: 20px;
-  border-radius: var(--radius);
-}
-
+      padding: 20px;
+      border-radius: var(--radius);
+    }
     .eyebrow{
       font-weight:600;
       color:var(--accent-2);
@@ -59,7 +52,6 @@
       letter-spacing:1.2px;
       margin-bottom: 15px;
     }
-
     h1{
       font-family: 'Playfair Display', serif;
       font-size:38px;
@@ -68,7 +60,6 @@
       color:var(--accent-1);
       letter-spacing:-0.02em;
     }
-
     p.lead{
       margin:12px 0 0 0;
       color:var(--muted);
@@ -76,16 +67,12 @@
       font-size:25px;
       margin-top: 18px;
     }
-
-    /* Grid */
     .grid{
       display:grid;
       grid-template-columns: repeat(2, 1fr);
       gap:var(--gap);
       align-items:stretch;
     }
-
-    /* Card */
     .card{
       background:var(--card-bg);
       border-radius:var(--radius);
@@ -98,18 +85,18 @@
       overflow:hidden;
       position:relative;
     }
-
     .card:hover{
       transform:translateY(-8px) rotate(-0.2deg);
       box-shadow: 0 20px 50px rgba(107,78,255,0.15), 0 6px 18px rgba(0,0,0,0.06);
     }
-
+    .card:hover {
+      border: 1px solid rgba(107,78,255,0.25);
+    }
     .card h3{
       margin:6px 0 12px 0;
       font-size:23px;
       color:#241233;
     }
-
     .thumb{
       width:100%;
       aspect-ratio: 16/9;
@@ -126,9 +113,6 @@
       transition:transform .6s cubic-bezier(.2,.9,.3,1);
     }
     .card:hover .thumb img{ transform: scale(1.04) translateY(-4px); }
-    .card:hover {
-  border: 1px solid rgba(107,78,255,0.25);
-}
     .desc{
       margin-top:12px;
       color:var(--muted);
@@ -136,8 +120,6 @@
       line-height:1.45;
       flex:1 1 auto;
     }
-    
-
     .meta{
       display:flex;
       justify-content:space-between;
@@ -146,11 +128,10 @@
       margin-top:16px;
     }
     .submeta {
-  margin: -6px 0 10px 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-
+      margin: -6px 0 10px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
     .link{
       display:inline-flex;
       align-items:center;
@@ -165,10 +146,9 @@
       transform:translateZ(0);
     }
     .link:focus-visible {
-  outline: 2px solid var(--accent-1);
-  outline-offset: 4px;
-}
-
+      outline: 2px solid var(--accent-1);
+      outline-offset: 4px;
+    }
     .tag{
       font-size:12px;
       color:#5C4B66;
@@ -178,8 +158,6 @@
       align-self:flex-start;
       font-weight:600;
     }
-
-    /* Decorative corner */
     .corner{
       position:absolute;
       right:14px;
@@ -194,82 +172,88 @@
       font-weight:700;
       color:var(--accent-1);
     }
-
-    /* Responsive */
     @media (max-width:920px){
       body{padding:36px 18px}
       h1{font-size:34px}
       .grid{grid-template-columns:repeat(1,1fr)}
     }
-
     @media (min-width:1400px){
       .wrap{max-width:1400px}
     }
-
-    /* Utility */
     .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
   </style>
 </head>
 <body>
-  
+
   <main class="wrap" role="main">
     <header class="hero">
-      
       <div>
         <div class="eyebrow">Saumya Seth</div>
         <h1>Design Work Samples</h1>
         <p class="lead">A curated selection of my design projects shared for review.</p>
       </div>
     </header>
-
     <section class="grid" aria-label="Design work samples">
-      <!-- Card 1 -->
+
+      <!-- Card 1 — The Nine -->
       <article class="card">
         <div class="corner">01</div>
+        <h3>The Nine — Bali Villa Investment Landing Page</h3>
+        <div class="thumb" aria-hidden="true">
+          <img src="thenine.png" alt="The Nine Landing Page"/>
+        </div>
+        <p class="desc">A high-converting investment property landing page for The Nine, a boutique villa development in Uluwatu, Bali. Designed around a 10% guaranteed ROI value proposition, with a dual conversion path (form + WhatsApp), scarcity indicators, and a founder walkthrough video — built to convert high-net-worth buyers.</p>
+        <div class="meta">
+          <span class="tag">Web Design</span>
+          <a class="link" href="https://thenine.paradysehomes.com" target="_blank" aria-label="View The Nine landing page">View Page →</a>
+        </div>
+      </article>
+
+      <!-- Card 2 — Reach+ -->
+      <article class="card">
+        <div class="corner">02</div>
         <h3>Reach+ Landing Page Design</h3>
         <div class="thumb" aria-hidden="true">
           <img src="postcard.png" alt="Reach+ Landing Page Hero"/>
         </div>
         <p class="desc">A conversion-driven landing page for Reach+, an AI-powered personalised postcard platform. The hero uses postcard-style visuals to immediately communicate emotional value and context. The design achieved a high CTR and strong on-page engagement.</p>
         <div class="meta">
-          <span class="tag">Web Design</span> 
-
-          <a class="link" href="https://www.figma.com/design/RIJCYCE3IvRbd2JnK80tdW/Postcard-Landing-Page?node-id=0-1&t=lMdB7SAIKJok7gh3-1" aria-label="View Design"  target="_blank">View Design →</a>
+          <span class="tag">Web Design</span>
+          <a class="link" href="https://www.figma.com/design/RIJCYCE3IvRbd2JnK80tdW/Postcard-Landing-Page?node-id=0-1&t=lMdB7SAIKJok7gh3-1" aria-label="View Design" target="_blank">View Design →</a>
         </div>
       </article>
 
-      <!-- Card 2 -->
+      <!-- Card 3 — Bolo AI -->
       <article class="card">
-        <div class="corner">02</div>
-        <h3>Bolo AI - Infographics </h3>
+        <div class="corner">03</div>
+        <h3>Bolo AI — Infographics</h3>
         <div class="thumb">
           <img src="boloai.png" alt="Infographics - Samples"/>
         </div>
-        <p class="desc">A structured, brand-consistent infographic series for Bolo AI’s blogs, newsletters, and socials. Designed for clarity and scannability while also contributing to content strategy. Resulted in smooth client approvals and 100% satisfaction.</p>
+        <p class="desc">A structured, brand-consistent infographic series for Bolo AI's blogs, newsletters, and socials. Designed for clarity and scannability while also contributing to content strategy. Resulted in smooth client approvals and 100% satisfaction.</p>
         <div class="meta">
           <span class="tag">Graphic Design</span>
-          <a class="link" href="https://drive.google.com/drive/folders/1630MrbcOHVoF9MkdH90kuCOLeL1d2sMZ?usp=sharing"  target="_blank">View Infographics →</a>
+          <a class="link" href="https://drive.google.com/drive/folders/1630MrbcOHVoF9MkdH90kuCOLeL1d2sMZ?usp=sharing" target="_blank">View Infographics →</a>
         </div>
       </article>
 
-      <!-- Card 3 -->
+      <!-- Card 4 — Waxwing -->
       <article class="card">
-        <div class="corner">03</div>
+        <div class="corner">04</div>
         <h3>Waxwing AI Partner Pitch Deck</h3>
         <div class="thumb">
           <img src="deck.png" alt="Waxwing AI Partner Pitch Deck"/>
         </div>
-        <p class="desc">A narrative-driven pitch deck crafted for Waxwing AI’s agency partner program (“Become an AIGency”). Combined clear messaging, visual hierarchy, and iterative improvements based on feedback to increase pitch effectiveness.</p>
+        <p class="desc">A narrative-driven pitch deck crafted for Waxwing AI's agency partner program ("Become an AIGency"). Combined clear messaging, visual hierarchy, and iterative improvements based on feedback to increase pitch effectiveness.</p>
         <div class="meta">
           <span class="tag">Presentation Design</span>
-          <a class="link" href="https://drive.google.com/file/d/1wd-oeD9B4ECZUcyRxY57NEWjz1dVxaHU/view?usp=sharing"  target="_blank">View Deck →</a>
+          <a class="link" href="https://drive.google.com/file/d/1wd-oeD9B4ECZUcyRxY57NEWjz1dVxaHU/view?usp=sharing" target="_blank">View Deck →</a>
         </div>
       </article>
 
-      <!-- Card 4 -->
+      <!-- Card 5 — Our Time HQ -->
       <article class="card">
-        <div class="corner">04</div>
+        <div class="corner">05</div>
         <h3>Our Time HQ Landing Page Design</h3>
         <div class="thumb">
           <img src="ourtime.png" alt="Our Time Landing Page"/>
@@ -277,46 +261,32 @@
         <p class="desc">A minimal, calming landing page for a UK-based wellness and time-management startup. Designed to resonate with the target demographic through simplicity, clarity, and a gentle visual aesthetic that guides users toward signup.</p>
         <div class="meta">
           <span class="tag">Web Design</span>
-          <a class="link" href="https://www.figma.com/design/gTsvg8N1F8OVqgmbTyDV24/Our-Time-HQ-landing-page-new?node-id=0-1&t=HxzdBCED3qR4KGfo-1"  target="_blank">View Design →</a>
+          <a class="link" href="https://www.figma.com/design/gTsvg8N1F8OVqgmbTyDV24/Our-Time-HQ-landing-page-new?node-id=0-1&t=HxzdBCED3qR4KGfo-1" target="_blank">View Design →</a>
         </div>
       </article>
 
-      <!-- Card 5 -->
+      <!-- Card 6 — Outbuzz AI -->
       <article class="card">
-        <div class="corner">05</div>
-        <h3>Outbuzz AI - Ad Creatives</h3>
+        <div class="corner">06</div>
+        <h3>Outbuzz AI — Ad Creatives</h3>
         <div class="thumb">
           <img src="outbuzzai.png" alt="Thumbnail for Canvas poster series"/>
         </div>
-        <p class="desc">A set of ad creatives for Google Display and LinkedIn, created for Outbuzz AI’s OOH platform. Designed to drive traffic to their instant OOH plan generator.</p>
+        <p class="desc">A set of ad creatives for Google Display and LinkedIn, created for Outbuzz AI's OOH platform. Designed to drive traffic to their instant OOH plan generator.</p>
         <div class="meta">
           <span class="tag">Advertising Design</span>
-          <a class="link" href="https://drive.google.com/drive/folders/1u-vZDHSfeINpjJGAurVHKMO-66NnjHAv?usp=sharing"  target="_blank">View Creatives →</a>
-        </div>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="card">
-        <div class="corner">06</div>
-        <h3>Services Showcase Card Design</h3>
-        <div class="thumb">
-          <img src="servicecarddes.png" alt="Services Cards design"/>
-        </div>
-        <p class="desc">A strategic, reusable card component design to highlight partner services on the Waxwing AI homepage. Focused on clarity, hierarchy, and visual consistency so users can understand value instantly. Currently live on <a href="https://www.waxwing.ai/"> www.waxwing.ai.</a></p>
-        <div class="meta">
-          <span class="tag">Web Design</span>
-          <a class="link" href="https://www.figma.com/design/HuNQyIWff2Ld96rosE2H3N/Service-cards?node-id=0-1&t=8c17EaUwqE65tVOF-1" target="_blank">View Designs →</a>
+          <a class="link" href="https://drive.google.com/drive/folders/1u-vZDHSfeINpjJGAurVHKMO-66NnjHAv?usp=sharing" target="_blank">View Creatives →</a>
         </div>
       </article>
 
     </section>
     <footer style="margin-top:80px;padding:40px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid #f0e9f7;">
-        <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;line-height:1.6;">
-    
-          Curated and shared privately for review.<br>
-          <div style="margin-top:14px;font-size:13px;color:var(--accent-1);font-weight:600;"><br>
-          © 2025 Saumya Seth — Design Samples</div>
-        </div>
-      </footer>
+      <div style="font-family:'Inter',sans-serif;max-width:600px;margin:0 auto;line-height:1.6;">
+        Curated and shared privately for review.<br>
+        <div style="margin-top:14px;font-size:13px;color:var(--accent-1);font-weight:600;"><br>
+        © 2025 Saumya Seth — Design Samples</div>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
